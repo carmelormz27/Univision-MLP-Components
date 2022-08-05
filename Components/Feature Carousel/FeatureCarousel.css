@@ -1,0 +1,25 @@
+.swiper {
+  overflow: visible;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.featured-carousel-draggable {
+  transition: all 200ms ease-in;
+}
+
+@media (max-width: 767px) {
+  .swiper-slide.featured-carousel {
+    width: clamp(100px, 50vw, 183px) !important;
+    min-width: 0px;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1680px) {
+  .feature-carousel-action-container {
+    bottom: 0;
+  }
+}

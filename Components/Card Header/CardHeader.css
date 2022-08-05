@@ -1,0 +1,24 @@
+.swiper-slide-active .card-header-slide-layer {
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+
+.swiper-pagination-bullet {
+  flex: 1 1 0px;
+  height: 1px;
+  background-color: white;
+  border-radius: 0;
+  margin-left: rgba(255, 255, 255, 0.2);
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.card-header-container {
+  transition: background-image 200ms ease-in;
+}
+
+.card-header-background-text {
+  transition: all 200ms ease-in;
+}
