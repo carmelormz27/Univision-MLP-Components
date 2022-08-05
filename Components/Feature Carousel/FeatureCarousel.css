@@ -1,20 +1,31 @@
-.swiper {
+/* ------------- FEATURE CAROUSEL --------------- */
+.feature-carousel-component .swiper {
   overflow: visible;
 }
 
-.swiper-slide {
-  height: auto;
-}
-
-.featured-carousel-draggable {
+.feature-carousel-draggable {
   transition: all 200ms ease-in;
 }
 
-@media (max-width: 767px) {
-  .swiper-slide.featured-carousel {
-    width: clamp(100px, 50vw, 183px) !important;
-    min-width: 0px;
-    max-width: none;
+.feature-carousel-component .swiper {
+  height: calc(clamp(100px, 50vw, 182px) * 1.5);
+}
+
+.feature-carousel-component .swiper-slide {
+  width: clamp(100px, 50vw, 182px);
+  height: calc(clamp(100px, 50vw, 182px) * 1.5);
+  min-width: 0px;
+  max-width: none;
+}
+
+@media (min-width: 768px) {
+  .feature-carousel-component .swiper-slide {
+    width: 17.5vw;
+    height: calc(17.5vw * 1.5);
+  }
+
+  .feature-carousel-component .swiper {
+    height: calc(17.5vw * 1.5);
   }
 }
 

@@ -1,3 +1,33 @@
-.hero-slider-scroll {
-  transition: all 300ms ease-in;
+/* ------------- HERO SLDER --------------- */
+.hero-slider-component .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+.hero-slider-component .swiper-pagination-bullet:not(:first-child) {
+  margin-left: 16px;
+}
+
+.hero-slider-component .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+@media (max-width: 1023px) {
+  .hero-slider-gradient {
+    pointer-events: none;
+  }
+
+  .hero-slider-mobile-top-gradient {
+    pointer-events: none;
+  }
+
+  /*.hero-slider-component .container-grid {
+    pointer-events: none;
+  }*/
+
+  .hero-slider-component .hero-slider-orange-gradient {
+    pointer-events: none;
+  }
 }
